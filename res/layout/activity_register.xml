@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EEEEEE" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/header_height"
+            android:background="#45B0E4" >
+
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:scaleType="center"
+                android:src="@drawable/back" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="账 号 注 册"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="290dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/logininput"
+            android:orientation="vertical" >
+
+            <EditText
+                android:id="@+id/new_username"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:drawableLeft="@drawable/login_01"
+                android:drawablePadding="10dp"
+                android:hint="请输入11位手机号码"
+                android:padding="11dp"
+                android:textSize="12sp" />
+
+            <View style="@style/line_horizontal" />
+
+            <EditText
+                android:id="@+id/new_password"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:drawableLeft="@drawable/login_02"
+                android:drawablePadding="10dp"
+                android:drawableRight="@drawable/login_03"
+                android:hint="请输入6~20位密码"
+                android:inputType="textPassword"
+                android:padding="11dp"
+                android:textSize="12sp" />
+
+            <View style="@style/line_horizontal" />
+
+            <EditText
+                android:id="@+id/new_validationcode"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:drawableLeft="@drawable/login_02"
+                android:drawablePadding="10dp"
+                android:drawableRight="@drawable/login_03"
+                android:hint="请输入验证码"
+                android:padding="11dp"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="290dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp" >
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="我已阅读并同意" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="《东合服务协议》"
+                android:textColor="#2283E2" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/startregister"
+            style="@style/textstyle_login"
+            android:layout_width="290dp"
+            android:layout_height="45dp"
+            android:layout_below="@id/login_company"
+            android:layout_marginTop="10dp"
+            android:text="提交"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:text="Copyright @ 2016" />
+
+</RelativeLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.dhcc"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="20" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_FORMAT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.RESTART_PACKAGES" />
+
+    <application
+        android:name="com.dhcc.DHCCApp"
+        android:allowBackup="true"
+        android:icon="@drawable/ico"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.dhcc.WelcomeActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.dhcc.ChooseActivity" />
+        <activity android:name="com.dhcc.LoginActivity" />
+        <activity android:name="com.dhcc.MainActivity" />
+        <activity android:name="com.dhcc.RegisterActivity" />
+        <activity android:name="com.zxing.activity.CaptureActivity" />
+        <activity android:name="com.zxing.activity.SelectImageActivity" />
+        <activity android:name="com.dhcc.ScannerChoose" />
+        <activity android:name="com.dhcc.ProductActivity" />
+        <activity android:name="com.dhcc.BarCodeScannerActivity" />
+        <activity android:name="com.dhcc.SetActivity" />
+        <activity android:name="com.dhcc.FeedbackActivity" />
+        <activity android:name="com.dhcc.SignActivity" />
+        <activity android:name="com.dhcc.UserInfoActivity" />
+    </application>
+
+</manifest>

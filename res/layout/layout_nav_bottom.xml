@@ -1,0 +1,40 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_bottom"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FBFBFB"
+    android:orientation="horizontal"
+    android:weightSum="100" >
+
+    <TextView
+        android:id="@+id/nav_bottom_0"
+        style="@style/textstyle_nav_bottom"
+        android:drawableTop="@drawable/index_10"
+        android:text="首页" />
+
+    <TextView
+        android:id="@+id/nav_bottom_1"
+        style="@style/textstyle_nav_bottom"
+        android:drawableTop="@drawable/index_01"
+        android:text="历史纪录" />
+
+    <TextView
+        android:id="@+id/nav_bottom_2"
+        style="@style/textstyle_nav_bottom"
+        android:drawableTop="@drawable/index_02"
+        android:text="消息" />
+
+    <TextView
+        android:id="@+id/nav_bottom_3"
+        style="@style/textstyle_nav_bottom"
+        android:drawableTop="@drawable/index_03"
+        android:text="仓库" />
+
+    <TextView
+        android:id="@+id/nav_bottom_4"
+        style="@style/textstyle_nav_bottom"
+        android:drawableTop="@drawable/index_04"
+        android:text="我的" />
+
+</LinearLayout>

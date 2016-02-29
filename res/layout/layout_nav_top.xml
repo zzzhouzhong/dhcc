@@ -1,0 +1,83 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_top"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:background="#45B0E4" >
+
+    <!-- <RelativeLayout -->
+    <!-- android:id="@+id/goto_scanner" -->
+    <!-- android:layout_width="0dp" -->
+    <!-- android:layout_weight="79" -->
+    <!-- android:layout_height="match_parent" -->
+    <!-- android:layout_marginTop="9dp" -->
+    <!-- android:layout_marginBottom="9dp" -->
+    <!-- android:layout_marginLeft="7dp" -->
+    <!-- android:layout_marginRight="7dp" -->
+    <!-- android:background="@drawable/index_t00"> -->
+
+
+    <!-- </RelativeLayout > -->
+
+    <TextView
+        android:id="@+id/saoyisao"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:drawablePadding="5dp"
+        android:drawableTop="@drawable/indext1"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="扫一扫"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/goto_sign"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:drawableLeft="@drawable/index_t01"
+        android:gravity="center"
+        android:padding="1dp"
+        android:text="已签到"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_margin="10dp"
+        android:layout_toLeftOf="@id/goto_sign"
+        android:layout_toRightOf="@id/saoyisao"
+        android:background="@drawable/rectangle_round"
+        android:padding="3dp" >
+
+        <ImageView
+            android:id="@+id/icon_search"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:scaleType="center"
+            android:src="@drawable/index_search1" />
+
+        <ImageView
+            android:id="@+id/icon_scan"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:scaleType="center"
+            android:src="@drawable/indext3" />
+
+        <TextView
+            android:id="@+id/nav_top_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_toLeftOf="@id/icon_scan"
+            android:layout_toRightOf="@id/icon_search"
+            android:gravity="center_vertical"
+            android:hint="请对准条码扫描"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+</RelativeLayout>
