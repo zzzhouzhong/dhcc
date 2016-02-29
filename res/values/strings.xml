@@ -12,7 +12,7 @@
     <string name="se4500">Se4500</string>
     <string name="title_activity_main">Scanner</string>
     <string name="set_scanner_manager">Set Continuous Mode</string>
-    <string name="scanner">Scan</string>
+    <string name="scanner">扫条码</string>
     <string name="start">开始扫描</string>
     <string name="close">停止扫描</string>
     <string name="scanner_on">Turn on scanner power</string>
@@ -32,7 +32,7 @@
     <string name="scanner_reset_def">Reset Scanner</string>
     <string name="scanner_reset_def_summary">Reset the scanner device</string>
     <string name="scanner_toast">Scanner reset finished!</string>
-    <string name="scanner_hint">At the barcode and press the scan button on the device for bar code</string>
+    <string name="scanner_hint">请对准条形码扫描</string>
     <string name="waibudingdanhao">外部订单号：</string>
     <string name="tuhao">图            号：</string>
     <string name="lingjianzhongwenming">零件中文名：</string>
